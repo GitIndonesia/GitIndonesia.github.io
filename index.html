@@ -1,56 +1,55 @@
 ---
-layout: index
-description: the good site of life
+layout: default
 ---
-{% for post in paginator.posts %}
-    {% include article_index.html %}
-{% endfor %}
 
-{% if paginator.total_pages > 1 %}
-    <div class="pagination">
-        <!-- link to first page -->
-        {% if paginator.total_pages > 3 %}
-            {% if paginator.page == 1 %}
-                <span class="disabled"><i class="fa fa-angle-double-left"></i></span>
-            {% else %}
-                <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-angle-double-left"></i></a>
-            {% endif %}
-        {% endif %}
 
-        <!-- previous link -->
-        {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-angle-left"></i></a>
-        {% else %}
-            <span class="disabled"><i class="fa fa-angle-left"></i></span>
-        {% endif %}
+<div class="container-fluid index">
+    <div class="row">
 
-        <!-- number links -->
-        {% capture start %}
-            {{ paginator.page | minus: 3 }}
-        {% endcapture %}
+        <div class="col-md-12 main content-panel">
 
-        {% for i in (1..paginator.total_pages) limit: 5 offset: start %}
-            {% if i == paginator.page %}
-                <span class="disabled">{{ i }}</span>
-            {% else %}
-                <a href="/page/{{ i }}">{{ i }}</a>
-            {% endif %}
-        {% endfor %}
+            <div class="gravatar">
+                <img src="{{ site.title_image }}" class="img-circle about-image" height="150" width="150" alt="{{ site.title }}" />
+            </div>
 
-        <!-- next link -->
-        {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-angle-right"></i></a>
-        {% else %}
-            <span class="disabled"><i class="fa fa-angle-right"></i></span>
-        {% endif %}
+            <h1 class="header author-header" itemprop="headline">{{ site.title }}</h1>
 
-        <!-- last page link -->
-        {% if paginator.total_pages > 3 %}
-            {% if paginator.page == paginator.total_pages %}
-                <span class="disabled"><i class="fa fa-angle-double-right"></i></span>
-            {% else %}
-                <a href="{{ site.baseurl | replace: '//', '/' }}/page/{{paginator.total_pages}}"><i class="fa fa-angle-double-right"></i></a>
-            {% endif %}
-        {% endif %}
+            <div class="author-text">
+                {{ site.title_description }}
+            </div>
+
+            <div class="links">
+                {% if site.twitter_username %}<a href="http://www.twitter.com/{{ site.twitter_username }}" target="_new"><i class="fa fa-twitter fa-2x"></i></a>{% endif %}
+                {% if site.linkedin_link %}<a href="{{ site.linkedin_link }}" target="_new"><i class="fa fa-linkedin fa-2x"></i></a>{% endif %}
+                {% if site.google_plus_link %}<a href="{{ site.google_plus_link }}" target="_new"><i class="fa fa-google-plus fa-2x"></i></a>{% endif %}
+                {% if site.github_username %}<a href="https://github.com/{{ site.github_username }}" target="_new"><i class="fa fa-github-alt fa-2x"></i></a>{% endif %}
+                {% if site.stackoverflow_link %}<a href="{{ site.stackoverflow_link }}" target="_new"><i class="fa fa-stack-overflow fa-2x"></i></a>{% endif %}
+                <a href="feed.xml" target="_new"><i class="fa fa-rss fa-2x"></i></a>
+            </div>
+          </div>
+          <div class="col-md-12 main content-panel">
+
+            <div class="articles">
+
+              <h2>Latest Articles</h2>
+
+              <ul>
+                  {% for post in site.posts | limit: site.post_limit %}
+
+                      <li>
+                          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                          <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
+                      </li>
+
+                  {% endfor %}
+                  <li>
+                      <small><i><a href="/posts/">more...</a></i></small>
+                  </li>
+              </ul>
+
+            </div>
+
+        </div>
+
     </div>
-{% endif %}
+</div>
