@@ -1,120 +1,31 @@
-name: Twister
-description: a powerful jekyll theme
-url: #place url
-baseurl: #place folder name if site is served in subfolder
-permalink: /:title/
-paginate: 8
-paginate_path: /page/:num/
-tag_dir: /tag
-category_dir: /category
-author_dir: /author
-author_title_prefix: 'Posted by '
-media_folder: /img
-author_default_avatar: /profile-pic.jpg
-tumblr: "#"
-pinterest: "#"
-instagram: "#"
-twitter: "#"
-facebook: "#"
-youtube: "#"
-vimeo: "#"
-soundcloud: "#"
+# Site settings
+title: "Github - Indonesia"
+email: jacob@jacobtomlinson.co.uk
+description: "A dark blog theme for Jekyll."
+baseurl: ""
+url: "http://carte-noire.jacobtomlinson.co.uk/"
+title_description: "A dark blog theme for Jekyll focusing on a clear reading experience. Large text and a narrow body makes carte noire a gorgeous read. With excellent code snippet support and integrated tools such as AddThis and Disqus giving your Jekyll blog all the functionality your users expect."
+title_image: "http://www.gravatar.com/avatar/00000000000000000000000000000000?s=500&d=mm"
+google_analytics: "UA-20365477-4"
+disqus_account: cartenoire
+github_repository: https://github.com/jacobtomlinson/carte-noire
+addthis_id: ra-513c6fa83da6ec67
+post_limit: 5
 
-encoding: utf-8
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      type: "standard"
-      homedisplay: "featimg"
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-relative_permalinks: false
-exclude: [.git, .gitignore, sass, .sass-cache, package.json, gruntfile.js, node_modules, README.md, documentation]
+# Social usernames/URLs
+twitter_username: _jacobtomlinson
+github_username:  jacobtomlinson
+linkedin_link: http://carte-noire.jacobtomlinson.co.uk/
+google_plus_link: http://carte-noire.jacobtomlinson.co.uk/
+stackoverflow_link: http://carte-noire.jacobtomlinson.co.uk/
 
-# prose.io configurations
-prose:
-  media: "img"
-  metadata:
-    _posts:
-      - name: "title"
-        field:
-          element: "text"
-          label: "title"
-      - name: "layout"
-        field:
-          element: "select"
-          label: "Layout"
-          help: "display post at full width or with sidebar"
-          options:
-            - name: "with sidebar"
-              value: "post"
-            - name: "full width"
-              value: "post_full"
-      - name: "author"
-        field:
-          element: "text"
-          label: "Author"
-          help: "author id as defined within _data/authors.yml"
-          type: "text"
-      - name: "featimg"
-        field:
-          element: "text"
-          label: "Featured Image"
-          help: "featured image within the img-folder"
-          type: "text"
-      - name: "type"
-        field:
-          element: "select"
-          label: "Post Type"
-          help: "each type has some special feature"
-          options:
-            - name: "Standard"
-              value: "standard"
-            - name: "Image"
-              value: "image"
-            - name: "Gallery"
-              value: "gallery"
-            - name: "Audio"
-              value: "audio"
-            - name: "YouTube"
-              value: "youtube"
-            - name: "Vimeo"
-              value: "vimeo"
-      - name: "homedisplay"
-        field:
-          element: "select"
-          label: "Home Display"
-          help: "decide whether to display embedded element (for post types: audio, youtube, vimeo) or Featured Image on home page"
-          options:
-            - name: "Featured Image"
-              value: "featimg"
-            - name: "Embedded Element"
-              value: "iframe"
-      - name: "vimeo-embed"
-        field:
-          element: "text"
-          label: "Vimeo Embedding Code"
-          help: "Set post type to vimeo in order for this to work"
-      - name: "gallery-id"
-        field:
-          element: "text"
-          label: "Gallery ID"
-          help: "ID of the gallery defined within _data/galleries.yml - use include in content to use"
-      - name: "audio-embed"
-        field:
-          element: "text"
-          label: "Audio Embedding Code"
-          help: "Set post type to audio in order for this to work"
-      - name: "yt-video-id"
-        field:
-          element: "text"
-          label: "YouTube Video ID"
-          help: "Set post type to youtube in order for this to work. Do not set featured image, as the youtube video thumbnail will be used"
-          type: "text"
+# Footer
+footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
+footer_right: "&lt;/&gt; on <a href=\"https://github.com/jacobtomlinson/carte-noire\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
+# Build settings
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+permalink: pretty
+exclude: [vendor]
