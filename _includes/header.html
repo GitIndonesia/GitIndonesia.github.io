@@ -1,8 +1,7 @@
-<header>
-  <div class='headline'>
-    <div class='container'>
-      <h1>{{ page.heading }}</h1>
-      <h2>{{ page.subheading }}</h2>
-    </div>
-  </div>
-</header>
+<div class="row">
+    <a href="{{ site.baseurl | replace: '//', '/' }}/" class="logo noline">
+        {% include full.html %}
+        {% include logo.html %}
+        {% include icon.html %}
+    </a>
+</div>
