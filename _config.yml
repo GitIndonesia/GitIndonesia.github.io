@@ -1,25 +1,25 @@
 # Site settings
-title: "Wicky ./information"
-email: Wickyandrian@yahoo.com
+title: "Github -ID"
+email: 
 description: "About life integrated"
 baseurl: "http://wicky-info.github.io/"
 url: "http://sentani.net/"
-title_description: "using octopress for my web information"
+title_description: "tessss"
 title_image: "https://avatars1.githubusercontent.com/u/8560064?v=3&s=460"
 google_analytics: ""
-disqus_account: wicky
-github_repository: https://github.com/wicky-info/wicky-info.github.io
+disqus_account: 
+github_repository: 
 addthis_id: 
 post_limit: 5
 
 # Social usernames/URLs
 twitter_username: 
-github_username:  wicky-info
+github_username:  
 linkedin_link: 
 google_plus_link: 
 stackoverflow_link: 
 # Footer
-footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://www.facebook.com/Wicky.Andrian.Pallo\">wicky-info</a>"
+footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://www.facebook.com/Wicky.Andrian.Pallo\">test</a>"
 footer_right: "&lt;/&gt; on <a href=\"https://github.com/wicky-info\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # Build settings
