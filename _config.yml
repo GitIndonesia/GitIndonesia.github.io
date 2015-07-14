@@ -1,22 +1,22 @@
 # Site settings
 title: "Github - Indonesia"
-email: jacob@jacobtomlinson.co.uk
+email: 
 description: "A dark blog theme for Jekyll."
 baseurl: ""
-url: "http://carte-noire.jacobtomlinson.co.uk/"
+url: "http://github-id.org/"
 title_description: "A dark blog theme for Jekyll focusing on a clear reading experience. Large text and a narrow body makes carte noire a gorgeous read. With excellent code snippet support and integrated tools such as AddThis and Disqus giving your Jekyll blog all the functionality your users expect."
 title_image: "https://octodex.github.com/images/dojocat.jpg"
 disqus_account: cartenoire
-github_repository: https://github.com/jacobtomlinson/carte-noire
-addthis_id: ra-513c6fa83da6ec67
+github_repository: https://github.com/GitHubIndonesia/githubindonesia.github.io
+addthis_id: 
 post_limit: 5
 
 # Social usernames/URLs
-twitter_username: _jacobtomlinson
-github_username:  jacobtomlinson
-linkedin_link: http://carte-noire.jacobtomlinson.co.uk/
-google_plus_link: http://carte-noire.jacobtomlinson.co.uk/
-stackoverflow_link: http://carte-noire.jacobtomlinson.co.uk/
+twitter_username: 
+github_username:  GitHub Indonesia
+linkedin_link: 
+google_plus_link: 
+stackoverflow_link: 
 
 # Footer
 footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://www.facebook.com/groups/GitHubID/?fref=ts\">Github - Indonesia</a>"
