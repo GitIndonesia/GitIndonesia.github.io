@@ -2,18 +2,18 @@
 
 title: Powerful New Theme for GitHub Pages | OpenTheme.co
 tagline: Amazing Websites and Hybrid Apps. Speedily!
-email: sehgal.manav@gmail.com
-copyright: Manav Sehgal
+email: 
+copyright: 
 keywords: open theme, github pages, semantic ui, single page apps
 
 description: > # this means to ignore newlines until "url:". One indent required.
   Powerful new theme featuring Semantic UI for speedily creating amazing websites and mobile-hybrid apps on GitHub Pages.
 
 # the base hostname & protocol for your site
-url: "http://opentheme.co"
+url: "http://github-id.org/"
 
-twitter_username: manavsehgal
-github_username:  manavsehgal
+twitter_username: 
+github_username:  
 
 default_image: /img/opentheme-workflow.png
 
