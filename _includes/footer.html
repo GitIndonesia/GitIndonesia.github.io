@@ -1,42 +1,56 @@
-<div class="footer clearfix">
-  <div class="col-md-6">
-    {{ site.footer_left }}
-  </div>
-  <div class="col-md-6">
-    {{ site.footer_right }}
+<div class="ui inverted footer vertical segment">
+  <div class="ui stackable page grid">
+    <div class="ten wide column">
+      <div class="ui three column stackable grid">
+        <div class="column">
+          <h5 class="ui inverted header">Theme</h5>
+          <div class="ui inverted link list">
+            <a class="item" href="/blog/">Blog</a>
+            <a class="item" href="/category/#theme">Theme Features</a>
+            <a class="item" href="/tag/#embeds">Embed Plugins</a>
+          </div>
+        </div>
+        <div class="column">
+          <h5 class="ui inverted header">Design</h5>
+          <div class="ui inverted link list">
+            <a class="item" href="{% post_url /blog/2014-12-15-content-strategy-for-startup-websites %}">Content Strategy</a>
+            <a class="item" href="/kitchensink/">Semantic UI Examples</a>
+            <a class="item" href="http://semantic-ui.com/">Semantic UI Site</a>
+          </div>
+        </div>
+        <div class="column">
+          <h5 class="ui inverted header">GitHub</h5>
+          <div class="ui inverted link list">
+            <a class="item" href="https://github.com/open-start/opentheme">Get OpenTheme</a>
+            <a class="item" href="{% post_url /blog/2014-11-26-open-cloud-based-workflow-for-designing-your-website %}">Cloud Workflow</a>
+            <a class="item" href="{% post_url /blog/2014-12-2-data-driven-web-apps-using-github %}">Data Apps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="six wide column">
+      <div class="ui two column stackable grid">
+        <div class="column">
+          <h5 class="ui inverted header">Social</h5>
+          <div class="ui inverted link list">
+            <a class="item" href="https://twitter.com/{{ site.twitter_username }}"><i class="twitter icon"></i> Twitter</a>
+            <a class="item" href="https://github.com/{{ site.github_username }}"><i class="github icon"></i> GitHub</a>
+            <a class="item" href="{{ site.url }}/feed.xml"><i class="rss icon"></i> Feed</a>
+          </div>
+        </div>
+        <div class="column">
+          <h5 class="ui inverted header">Contact Us</h5>
+          <addr>
+            123 Your Address Here <br>
+            State, City <br>
+          </addr>
+          <p>(000) 123-4567</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<script src="{{ site.baseurl }}/js/jquery.mmenu.min.all.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<script type="text/javascript">
-   $(document).ready(function() {
-      $("#my-menu").mmenu().on( "closed.mm", function() {
-            $(".menu-button").show();
-         });
-      $(".menu-button").click(function() {
-        $(".menu-button").hide();
-        $("#my-menu").trigger("open.mm");
-      });
-   });
-</script>
-
-{% if site.google_analytics %}
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
-          _gaq.push(['_trackPageview']);
-  (function () {
-      var ga = document.createElement('script');
-      ga.type = 'text/javascript';
-      ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-{% endif %}
+<div class="ui center aligned segment copyright">
+  <i class="world icon"></i> Copyright &copy; {{ site.time | date: "%Y" }}, {{ site.copyright }}.
+</div>
