@@ -70,6 +70,9 @@ h1, h2, h3, h4, h5 {
 
 .global .symphony {
   background-image: url(img/symphony.png); }
+  
+  .global .footer-lodyas {
+  background-image: url(img/footer-lodyas.png); }
 
 /*--------------
     Header
