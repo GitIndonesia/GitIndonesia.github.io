@@ -1,56 +1,111 @@
-<div class="ui inverted footer vertical segment">
-  <div class="ui stackable page grid">
-    <div class="ten wide column">
-      <div class="ui three column stackable grid">
-        <div class="column">
-          <h5 class="ui inverted header">Theme</h5>
-          <div class="ui inverted link list">
-            <a class="item" href="/blog/">Blog</a>
-            <a class="item" href="/category/#theme">Theme Features</a>
-            <a class="item" href="/tag/#embeds">Embed Plugins</a>
-          </div>
-        </div>
-        <div class="column">
-          <h5 class="ui inverted header">Design</h5>
-          <div class="ui inverted link list">
-            <a class="item" href="{% post_url /blog/2014-12-15-content-strategy-for-startup-websites %}">Content Strategy</a>
-            <a class="item" href="/kitchensink/">Semantic UI Examples</a>
-            <a class="item" href="http://semantic-ui.com/">Semantic UI Site</a>
-          </div>
-        </div>
-        <div class="column">
-          <h5 class="ui inverted header">GitHub</h5>
-          <div class="ui inverted link list">
-            <a class="item" href="https://github.com/open-start/opentheme">Get OpenTheme</a>
-            <a class="item" href="{% post_url /blog/2014-11-26-open-cloud-based-workflow-for-designing-your-website %}">Cloud Workflow</a>
-            <a class="item" href="{% post_url /blog/2014-12-2-data-driven-web-apps-using-github %}">Data Apps</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="six wide column">
-      <div class="ui two column stackable grid">
-        <div class="column">
-          <h5 class="ui inverted header">Social</h5>
-          <div class="ui inverted link list">
-            <a class="item" href="https://twitter.com/{{ site.twitter_username }}"><i class="twitter icon"></i> Twitter</a>
-            <a class="item" href="https://github.com/{{ site.github_username }}"><i class="github icon"></i> GitHub</a>
-            <a class="item" href="{{ site.url }}/feed.xml"><i class="rss icon"></i> Feed</a>
-          </div>
-        </div>
-        <div class="column">
-          <h5 class="ui inverted header">Contact Us</h5>
-          <addr>
-            123 Your Address Here <br>
-            State, City <br>
-          </addr>
-          <p>(000) 123-4567</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+		<!-- Footer -->
+			<div id="footer-wrapper">
+				<section id="footer" class="container">
+					<div class="row">
+						<div class="8u">
+							<section>
+								<header>
+									<h2>Artikel Baru</h2>
+								</header>
+								<ul class="dates">
+								{% for post in site.posts offset: 0 limit: 5 %}
+									<li>
+										<span class="date">{{ post.date | date: "%B"}} <strong>{{ post.date | date: "%d"}}</strong></span>
+										<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+										{{ post.excerpt }}
+									</li>
+								{% endfor %}
+								</ul>
+							</section>
+						</div>
+						<div class="4u">
+							<section>
+								<header>
+									<h2>Tentang Kami</h2>
+								</header>
+								<a href="#" class="image featured"><img src="{{ site.baseurl }}/assets/images/pic10.jpg" alt="" /></a>
+								<p>
+									Ini adalah <strong>Komunitas Git Indonesia</strong>.
+									<br>Zzz ...
+									Selanjutnya tambahin lagi kata-katanya om.									
+								</p>
+							</section>
+						</div>
+					</div>
+					<div class="row">
+						<div class="4u">
+							<section>
+								<header>
+									<h2>Ini Label</h2>
+								</header>
+								<ul class="divided">
+									<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
+									<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
+									<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
+									<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="4u">
+							<section>
+								<header>
+									<h2>Ini Label </h2>
+								</header>
+								<ul class="divided">
+									<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
+									<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
+									<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
+									<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="4u">
+							<section>
+								<header>
+									<h2>Gabung dengan kami</h2>
+								</header>
+								<ul class="social">
+									<li><a class="icon fa-github" href="https://github.com/GitIndonesia"><span class="label">GitHub</span></a></li>
+									<li><a class="icon fa-facebook" href="https://facebook.com/groups/githubid"><span class="label">Facebook</span></a></li>
+									<!-- Gak tau , silahkan di isi
+									<li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+									<li><a class="icon fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+									<li><a class="icon fa-linkedin" href="#"><span class="label">LinkedIn</span></a></li>
+									<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
+									-->
+								</ul>
+								<ul class="contact">
+									<li>
+										<h3>Alamat</h3>
+										<p>
+											Localhost #gaktau<br />
+											06-7D-91-A4-J1-48 #gaktau<br />
+											127.0.0.1 #gaktau
+										</p>
+									</li>
+									<li>
+										<h3>Mail</h3>
+										<p><a href="#">root@localhost</a> #gaktau</p>
+									</li>
+								</ul>
+							</section>
+						</div>
+					</div>
+					<div class="row">
+						<div class="12u">
 
-<div class="ui center aligned segment copyright">
-  <i class="world icon"></i> Copyright &copy; {{ site.time | date: "%Y" }}, {{ site.copyright }}.
-</div>
+							<!-- Copyright -->
+								<div id="copyright">
+									<ul class="links">
+										<li>&copy; Komunitas Git Indonesia. All rights reserved.</li>
+										<li>Tema: <a href="https://github.com/CloudCannon/DopeTrope-Jekyll-Theme">Dreametry Doodle</a></li>
+									</ul>
+								</div>
+
+						</div>
+					</div>
+				</section>
+			</div>
+
+	</body>
+</html>
