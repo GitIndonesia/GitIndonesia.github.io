@@ -6,17 +6,31 @@ permalink: /members/
 <div class="page-highligter">
   <div class="container">
     <h1>Members</h1>
-    <p>Insert desciption here...</p>
+    <p>Posisi dan Keterampilan dari anggota kami. Sorot avatar untuk lihat beberapa informasi.</p>
   </div>
 </div>
 
-<div class="container">
-  <!-- TODO: More info about us -->
-  <h1>Underconstruction</h1>
-  <p>
-    Selagi menunggu dibangun, dummy text mengarah di bawah ini.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
+<div class="row text-center memberlist-community">
+  {% for member in site.data.members %}
+  <a href="//github.com/{{ member.username }}">
+  <div class="col-lg-3 col-md-3 col-sm-6 user-item">
+    <div class="user-information">
+      {{ member.description }}
+      <p class="text-primary">{{ member.languages | join: ', ' }}</p>
+    </div>
+    <div class="user-description">
+      {{ member.username }}
+      <div class="user-realname">
+        {{ member.name }}
+      </div>
+    </div>
+    <img class="img-responsive user-image" src="//github.com/{{ member.username }}.png " />
+  </div>
+  </a>
+  {% capture num %}{{ forloop.index | modulo: 4 }}{% endcapture %} {% if num == '0' %}
 </div>
+<!-- /row -->
+<div class="row text-center memberlist-community">
+  {% endif %} {% endfor %}
+</div>
+<!-- /row -->

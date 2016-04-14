@@ -1,0 +1,63 @@
+# Urutan dimulai dari teratas.
+# Yang teratas adalah member penting (misal: Leader, manager, dsb)
+# Member diharuskan menambahkan diri oleh disendiri.
+#
+# FORMAT:
+# - username: USERNAME_GITHUB
+#   name: NAMA_ANDA
+#   description: Satu kalimat, sejuta arti.
+#   languages:
+#     - bahasa sunda
+#     - bahasa jawa
+#     - bahasa melayu
+#     - bahasa belanda
+#
+
+# Untuk sementara, semenjak saya (indrakaw), belum tahu data lengkap, saya isi setahunya.
+# TODO: input sebanyak-banyaknya!
+
+- username: CreatorB
+  name: creatorbe
+
+- username: dikiaap
+  name: Diki Andriansyah
+  description: Member Git Indonesia sejak 2014!
+
+- username: maful
+  name: Maful Prayoga Arnandi
+
+- username: rickostefan
+  name: Griko Stefan
+
+- username: rizkylab
+  name: Rizky Sulistyo
+
+- username: septyaman
+  name: Septyaman Vom
+
+- username: SunDi3yansyah
+  name: Cahyadi Triyansyah
+
+- username: tigefa4u
+  name: sugeng tigefa
+
+- username: troke12
+  name: Ochi Darma Putra
+
+- username: wicky-info
+  name: 3728
+
+- username: zhiephie
+  name: Yudi Purwanto
+
+- username: zulfinjuliant
+  name: Zulfindra juliant
+
+- username: indrakaw
+  name: Indra Kurniawan
+  description: Orang keras.
+  languages:
+    - HTML/CSS
+    - PHP
+    - Ruby
+    - C#
