@@ -31,3 +31,9 @@ body {
   h1 { @extend h1; }
   p { @extend p; }
 }
+
+.page-highligter {
+  color: inherit;
+  background-color: #eee;
+  padding: 15px 0;
+}
