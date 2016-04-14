@@ -1,0 +1,24 @@
+# Site settings
+title: Komunitas Git Indonesia
+description: Indonesian Git Community and network.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://gitindonesia.github.io" # the base hostname & protocol for your site
+twitter_username: ~
+github_username:  ~
+
+# Build settings
+markdown: kramdown
+
+# Exclude system files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+navigation:
+  - title: About
+    url: /about
+  - title: Members
+    url: /members
+  - title: Projects
+    url: /projects
