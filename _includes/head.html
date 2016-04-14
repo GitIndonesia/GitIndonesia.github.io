@@ -4,10 +4,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
 
-  <link rel="icon" href="favicon.ico" sizes="16x16" type="image/x-icon">
-  <link rel="icon" href="assets/img/icon-p-128.ico" sizes="32x32 48x48 64x64 128x128" type="image/x-icon">
-  <link href="assets/css/bootstrap.css" rel="stylesheet">
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" sizes="16x16" type="image/x-icon">
+  <link rel="icon" href="{{ "/assets/img/icon-p-128.ico" | prepend: site.baseurl }}" sizes="32x32 48x48 64x64 128x128" type="image/x-icon">
+  <link href="{{ "assets/css/bootstrap.css" | prepend: site.baseurl }}" rel="stylesheet">
+  <link href="{{ "assets/css/main.css" | prepend: site.baseurl }}" rel="stylesheet">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
