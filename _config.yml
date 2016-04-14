@@ -4,7 +4,9 @@ description: Indonesian Git Community and network.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://gitindonesia.github.io" # the base hostname & protocol for your site
 twitter_username: ~
-github_username:  ~
+github:
+  username: GitIndonesia
+  repo: GitIndonesia/GitIndonesia.github.io
 
 # Build settings
 markdown: kramdown
