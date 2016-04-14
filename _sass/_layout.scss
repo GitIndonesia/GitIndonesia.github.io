@@ -1,3 +1,33 @@
 /**
  * LAYOUT
+ * Site layout, ids and classes, reposition, resposive, etc.
  */
+
+// TODO: Defines these color via _variables.scss
+
+body {
+  // margin-bottom: 60px; /* sticky footer */
+  // padding-top: 70px; /* fixed navbar-top   */
+  padding-top: 50px; /* fixed navbar-top + jumbotron */
+  // padding-bottom: 20px;
+  > header {
+    /* class-less header */
+  }
+  > footer {
+    /* class-less footer */
+    background-color: #f5f5f5;
+    padding: 25px 0;
+  }
+}
+
+.source-link {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #e5e5e5;
+}
+
+.landing-community {
+  text-align: center;
+  h1 { @extend h1; }
+  p { @extend p; }
+}
