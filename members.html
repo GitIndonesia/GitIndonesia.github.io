@@ -21,7 +21,7 @@ permalink: /members/
     <div class="user-description">
       {{ member.username }}
       <div class="user-realname">
-        {{ member.name }}
+        {% if member.name %}{{ member.name }}{% else %}{{ member.username }}{% endif %}
       </div>
     </div>
     <img class="img-responsive user-image" src="//github.com/{{ member.username }}.png " />

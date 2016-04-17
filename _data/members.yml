@@ -16,30 +16,68 @@
 # Untuk sementara, semenjak saya (indrakaw), belum tahu data lengkap, saya isi setahunya.
 # TODO: input sebanyak-banyaknya!
 
-- username: CreatorB
-  name: creatorbe
+- username: SunDi3yansyah
+  name: Cahyadi Triyansyah
+
+- username: zhiephie
+  name: Yudi Purwanto
+
+- username: christiawan
+  name: Christiawan Eko Saputro
+
+- username: lkmfz
+  name: Luqman Fauzi
 
 - username: dikiaap
   name: Diki Andriansyah
-  description: Member Git Indonesia sejak 2014!
 
-- username: maful
-  name: Maful Prayoga Arnandi
+- username: maulayyacyber
+  name: Fika Ridaul Maulayya
 
-- username: rickostefan
-  name: Griko Stefan
+- username: halimbimantara
+  name: Halim Bimantara
+
+- username: sakukode
+  name: Rizqi Maulana
+
+- username: ariq01
+  name: Ariq Naufal
+
+- username: byeka
+  name: Eka Putra
+
+- username: DeVoresyah
+  name: DeVoresyah ArEst
+
+- username: alif25r
+  name: Alif Maulana El Fattah Nataly
+
+- username: christoga
+  name: Andre Christoga
+
+- username: achmiral
+  name: Miral Achmed
+
+- username: dhiyaulhaqZA
 
 - username: rizkylab
   name: Rizky Sulistyo
 
-- username: septyaman
-  name: Septyaman Vom
+- username: vcleapz
+  name: Agrin Fauzi
 
-- username: SunDi3yansyah
-  name: Cahyadi Triyansyah
+- username: Sulistyarif
 
-- username: tigefa4u
-  name: sugeng tigefa
+- username: abdilahrf
+  name: Abdillah Hasny
+
+- username: muhammad-ihsan
+  name: Muhammad Ihsan
+
+- username: dfath
+  name: Fathrico
+
+- username: tebe4rt
 
 - username: troke12
   name: Ochi Darma Putra
@@ -47,17 +85,23 @@
 - username: wicky-info
   name: 3728
 
-- username: zhiephie
-  name: Yudi Purwanto
-
-- username: zulfinjuliant
-  name: Zulfindra juliant
-
 - username: indrakaw
   name: Indra Kurniawan
   description: Orang keras.
   languages:
-    - HTML/CSS
+    - HTML/(S)CSS
     - PHP
     - Ruby
     - C#
+
+- username: BosNaufal
+  name: Naufal Rabbani
+
+- username: andhikamaheva
+  name: Andhika Maheva Wicaksono
+
+- username: padli
+  name: khoirul padli
+
+- username: dyazincahya
+  name: cahya dyazin
