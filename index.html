@@ -1,17 +1,21 @@
 ---
-layout: full-width
+layout: default
 ---
 
-<div class="jumbotron landing-community">
+<div id="herox">
   <div class="container">
-    <img class="logo" src="{{ "/assets/brand/git-id-solid.svg" | prepend: site.baseurl }}" alt="{{ site.title }}" style="width:30%;"/>
-    <h1>{{ site.title }}</h1>
-    <p>{{ site.description }}</p>
-    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <img class="logo" src="{{ "/assets/brand/git-id-solid.svg" | prepend: site.baseurl }}" alt="{{ site.title }}" style="width:30%;"/>
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="container highligh-community">
+<div class="container">
   <div class="row">
     <div class="col-md-4">
       <h2>Tentang Git</h2>
@@ -29,8 +33,8 @@ layout: full-width
       <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
     </div>
   </div>
-</div>
+  <div class="row">
+    <!-- TODO: Some list e.g. blog, podcast, events, go here -->
+  </div>
 
-<div class="container listing-community">
-  <!-- TODO: Some list e.g. blog, podcast, events, go here -->
 </div>

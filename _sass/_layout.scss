@@ -26,18 +26,6 @@ body {
   background-color: #e5e5e5;
 }
 
-.landing-community {
-  text-align: center;
-  h1 { @extend h1; }
-  p { @extend p; }
-}
-
-.page-highligter {
-  color: inherit;
-  background-color: #eee;
-  padding: 15px 0;
-}
-
 .user {
   &-description {
     display: block;
@@ -88,7 +76,12 @@ body {
   }
 }
 
-.memberlist-community, .user-item {
+.no-pm {
   padding: 0;
   margin: 0;
+}
+
+#herox {
+  padding: 4em 0;
+  background-color: #eee;
 }

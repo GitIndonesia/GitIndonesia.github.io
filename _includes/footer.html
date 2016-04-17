@@ -1,25 +1,5 @@
 <footer id="bottom">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <h4>{{ site.title }}</h4>
-        <p class="text-muted">
-          {{ site.description }}<br />
-          since 2014
-        </p>
-        <p>Powered by <a href="//jekyllrb.com">Jekyll</a>.</p>
-      </div><!-- /col-lg-6 -->
-
-      <div class="col-lg-6">
-        <h4>Contact us</h4>
-        <p>
-          <a href="//twitter.com/{{ site.twitter_username }}" target="_blank">Twitter</a><br/>
-          <a href="//github.com/{{ site.github.username }}" target="_blank">Github</a><br/>
-          <a href="//github.com/{{ site.github.repo }}/issues" target="_blank">Forum</a><br />
-        </p>
-      </div><!-- /col-lg-6 -->
-    </div>
-  </div>
+  {% include components/column-footer.html %}
 </footer>
 <div class="source-link">
   <!-- TODO: Some copyright and LICENSE actually goes here. -->
