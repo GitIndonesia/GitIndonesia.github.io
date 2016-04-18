@@ -1,0 +1,18 @@
+{% if page.comments and jekyll.environment == "production" %}
+<div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div id="disqus_thread" class="post-comment"></div>
+      <script>
+          (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+              var d = document, s = d.createElement('script');
+
+              s.src = '//{{ site.disqus_shortname }}.disqus.com/embed.js';
+
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </div>
+</div>
+{% endif %}

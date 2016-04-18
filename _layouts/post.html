@@ -1,29 +1,25 @@
-{% include header.html %}
-<body>
-{% include nav.html %}
-<div id="main-wrapper">
-	<div class="container">
-		<div class="row">
-			<div class="12u">
+---
+layout: default
+---
+<div class="container">
 
-			<!-- Blog -->
-				<section>
-					<header class="major">
-						<h2>{{ page.title }}</h2>
-						<p>Di Post tanggal {{ page.date | date_to_string }}</p>
-					</header>
-					<div class="row">
-						<div class="8u -2u">
-							<section class="box">
-								<a href="#" class="image featured"><img src="{{ site.baseurl }}{{ page.featured }}" alt="" /></a>
-								{{ page.content }}
-							</section>
-						</div>
-					</div>
-				</section>
+  <ol class="breadcrumb">
+    <li><a href="{{ "/blog/" | prepend: baseurl }}">Blog</a></li>
+    <li class="active"><a href="{{ page.url }}">{{ page.title }}</a></li>
+  </ol>
 
-			</div>
-		</div>
-	</div>
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <article class="blog-post">
+        <h2 class="blog-post-title text-center"><a href="{{ page.url }}" id="title_{{ page.id }}"><p>{{ page.title }}</p></a></h2>
+        <p class="blog-post-meta text-center text-muted">
+          Posted on <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
+          by <a href="//github.com/{{ page.author }}" itemprop="author" itemscope itemtype="//schema.org/Person">{{ page.author }}</a>
+        </p>
+        <div id="post_{{ page.id }}" class="blog-post-content" itemprop="articleBody">
+          {{ content }}
+        </div>
+      </article>
+  </div>
+  </div>
 </div>
-{% include footer.html %}
