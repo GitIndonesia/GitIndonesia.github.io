@@ -5,7 +5,7 @@
   <!-- TODO: Some copyright and LICENSE actually goes here. -->
   <!-- &copy {{ site.time | date: "%Y" }} <strong>{{ site.title }}</strong>, All rights reserved. -->
   Proudly hosted by <a href="//github.com">GitHub</a>.
-  Last build on <time datetime="{{ site.time }}">{{ site.time | date: "%D" }}</time>.
+  Last build on <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: "%D" }}</time>.
   <a href="//github.com/{{ site.github.repo }}">View Code.</a>
 </div>
 {% include components/js-script.html %}
