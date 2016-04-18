@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-name: Komunitas Git Indonesia
-description: Komunitas Git Indonesia
-tagline: Komunitas Git Indonesia
-baseurl: ""
-permalink: /post/:title
-paginate: 10
-gems:
-  - jekyll-paginate
-=======
 # Site settings
 title: Komunitas Git Indonesia
 description: Indonesian Git Community and network.
@@ -38,4 +28,3 @@ defaults:
     values:
       layout: "post"
       comment: true 
->>>>>>> 12b4a881d972c5c405140558fc8b65cf96b96503
