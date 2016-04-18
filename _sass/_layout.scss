@@ -7,8 +7,7 @@
 
 body {
   // margin-bottom: 60px; /* sticky footer */
-  // padding-top: 70px; /* fixed navbar-top   */
-  padding-top: 50px; /* fixed navbar-top + jumbotron */
+  padding-top: 70px; /* fixed navbar-top   */
   // padding-bottom: 20px;
   > header {
     /* class-less header */
@@ -84,4 +83,48 @@ body {
 #herox {
   padding: 4em 0;
   background-color: #eee;
+  margin-top: -20px;
+}
+
+.blog {
+  &-header {
+  	padding-top:20px;
+  	padding-bottom:20px
+  }
+  &-title {
+  	margin-top:30px;
+  	margin-bottom:0;
+  	font-size: ceil(($font-size-base * 4.25)); // ~60px
+  	font-weight:normal
+  }
+  &-description {
+  	font-size: ceil(($font-size-base * 1.4)); // ~20px
+  }
+  &-main {
+  	font-size: ceil(($font-size-base * 1.25)); // ~18px
+  	line-height:1.5
+  }
+  &-post {
+  	margin-bottom:60px
+  }
+  &-post-sm {
+  	margin-bottom:5px
+  }
+  &-post-title {
+  	margin-bottom:5px;
+  	font-size: ceil(($font-size-base * 2.8)); // ~40px
+  }
+  &-post-title-sm {
+  	margin-bottom:5px;
+  	font-size: ceil(($font-size-base * 1.25)); // ~18px
+  	line-height:1
+  }
+  &-post-meta {
+  	margin-bottom:20px
+  }
+  &-post-meta-sm {
+  	margin-bottom:5px;
+  	font-size: ceil(($font-size-base * 0.85)); // ~12px
+  	line-height:1
+  }
 }

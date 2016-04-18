@@ -1,0 +1,42 @@
+---
+layout: default
+title: Blog
+permalink: /blog/index.html
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1 blog-heading">
+      <h1 class="blog-title text-center">Git Indonesia Blog</h1>
+      <p class="lead blog-description text-center text-muted">Kabar ringkas seputar Komunitas Git Indonesia.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1 text-center">
+      <a href="{{ "/blog/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss fa-2x fa-border"></i></a>
+      <a href="{{ "/blog/archive" | prepend: site.baseurl }}"><i class="fa fa-archive fa-2x fa-border"></i></a>
+      <a href="#"><i class="fa fa-pencil fa-2x fa-border"></i></a>
+      <hr>
+    </div>
+  </div>
+  <div class="blog-main">
+    {% for post in site.posts %}
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <article class="blog-post">
+          <h2 class="blog-post-title text-center">
+            <a href="{{ post.url }}" id="title_{{ post.id }}"><p>{{ post.title }}</p></a>
+          </h2>
+          <p class="blog-post-meta text-center text-muted">
+            Posted on <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+            by <a href="//github.com/{{ post.author }}">{{ post.author }}</a>
+          </p>
+          <div id="post_{{ post.id }}" class="blog-post-content" itemprop="articleBody">
+            {{ post.content }}
+          </div>
+        </article>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

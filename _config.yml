@@ -7,12 +7,24 @@ twitter_username: ~
 github:
   username: GitIndonesia
   repo: GitIndonesia/GitIndonesia.github.io
+disqus_shortname: githubid
 
 # Build settings
 markdown: kramdown
+
+permalink: /blog/:title/
 
 # Exclude system files
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+
+# Default value Front Matter
+defaults:
+  - # default post type
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+      comment: true 
