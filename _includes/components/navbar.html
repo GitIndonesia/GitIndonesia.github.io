@@ -1,0 +1,30 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        {% for menu in site.data.layout.navigation %}
+          {% if menu.subs %}
+          <li class="dropdown{% if page.url contains menu.url %} active{% endif %}">
+            <a href="{% if menu.url %}{{ menu.url | prepend: site.baseurl }}{% else %}#{% endif %}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ menu.title }} <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              {% for submenu in menu.subs %}
+              <li {% if page.url contains submenu.url %}class="active"{% endif %}><a href="{{ submenu.url | prepend: site.baseurl }}">{{ submenu.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+          {% else %}<li {% if page.url contains menu.url %}class="active"{% endif %}><a href="{{ menu.url | prepend: site.baseurl }}">{{ menu.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>

@@ -1,14 +1,22 @@
-![banner](http://i.imgur.com/Zn0vBb8.jpg)
+# [GitIndonesia.github.io](http://gitindonesia.github.io)
+Source code Homepage Komunitas Git Indonesia.
 
-## Install
-		git clone https://github.com/GitIndonesia/GitIndonesia.github.io
-		sudo gem install jekyll jekyll-paginate octopress
-		octopress new post "your new post"
-		jekyll build
-		jekyll serve
+Project ini dibangun dengan bantuan dari
 
-## Deploy
-		git add -u
-		git add .
-		git commit -m 'Message'
-		git push
+  * bootstrap
+  * jekyll
+
+Untuk meng-compile / build, anda harus menginstall RubyGems di PC anda. Lalu install dependencies yang diperlukan dengan `bundle install`.
+
+
+## Building the site
+
+1. Install bundler: `gem install bundler`
+2. Install dependencies: `bundle install`
+3. Bersihkan directory build: `bundle exec jekyll clean`
+4. Build dan serve: `bundle exec jekyll serve`
+5. Buka `http://localhost:4000` di browser
+
+
+## Contribute
+Fell free.

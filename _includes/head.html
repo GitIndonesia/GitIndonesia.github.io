@@ -1,0 +1,22 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Jekyll {{ jekyll.version }}" />
+  <meta name="environment" content="{{ jekyll.environment }}" />
+
+  <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+
+  <link rel="icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" sizes="16x16" type="image/x-icon">
+  <link rel="icon" href="{{ "/assets/img/icon-p-128.ico" | prepend: site.baseurl }}" sizes="32x32 48x48 64x64 128x128" type="image/x-icon">
+  <link href="{{ "/assets/css/bootstrap.css" | prepend: site.baseurl }}" rel="stylesheet">
+  <link href="{{ "/assets/css/font-awesome.min.css" | prepend: site.baseurl }}" rel="stylesheet">
+  <link href="{{ "/assets/css/main.css" | prepend: site.baseurl }}" rel="stylesheet">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
