@@ -6,9 +6,9 @@ git:
 cache: bundler
 
 rvm:
-  - 2.3
   - 2.2
-  - 1.9.3
+  - 2.1
+  - 2.0
 
 branches:
   only:

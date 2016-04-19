@@ -9,7 +9,7 @@ Project ini dibangun dengan bantuan dari
   * [Jekyll](https://github.com/jekyll/jekyll)
 
 ## Persyaratan
-- Ruby (`v1.9.3` atau keatas untuk `Jekyll 2` dan `v2` atau keatas untuk `Jekyll 3`)
+- Ruby >= 2.0
 - [RubyGems](http://rubygems.org/pages/download)
 - Linux, Unix, or Mac OS X
 - Git
