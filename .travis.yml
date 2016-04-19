@@ -1,22 +1,10 @@
 language: ruby
 
-git:
-  depth: 10
-
-cache: bundler
-
 rvm:
 	- 2.2
 
-branches:
-  only:
-    - master
+before_install: gem update --system
 
-before_install:
-	- gem update --system
+install: bundle install
 
-install:
-	- bundle install
-
-script:
-	- bundle exec jekyll build
+script: bundle exec jekyll build
