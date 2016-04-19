@@ -19,6 +19,7 @@ Project ini dibangun dengan bantuan dari
 gem install bundler --no-ri --no-rdoc
 bundle install
 bundle exec jekyll clean
+bundle exec jekyll build
 bundle exec jekyll serve
 # Buka browser dengan alamat http://localhost:4000
 ```

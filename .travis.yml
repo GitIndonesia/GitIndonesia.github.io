@@ -6,7 +6,9 @@ git:
 cache: bundler
 
 rvm:
+  - 2.3
   - 2.2
+  - 1.9.3
 
 branches:
   only:
@@ -16,7 +18,10 @@ before_install:
   - gem update --system
 
 install:
+  - gem install bundler --no-ri --no-rdoc
   - bundle install
 
 script:
+  - bundle exec jekyll clean
   - bundle exec jekyll build
+  - bundle exec jekyll serve
