@@ -5,14 +5,18 @@ baseurl: ""
 url: "https://gitindonesia.github.io"
 twitter_username: Git_ID
 facebook_username: GitHubID
+disqus_shortname: githubid
 github:
   username: GitIndonesia
   repo: GitIndonesia/GitIndonesia.github.io
-disqus_shortname: githubid
 
 # Build settings...
+sass:
+  style: compressed
+encoding: "utf-8"
 markdown: kramdown
 permalink: /blog/:title/
+timezone: Asia/Jakarta
 
 # Exclude system files...
 exclude:
