@@ -24,4 +24,3 @@ install:
 script:
   - bundle exec jekyll clean
   - bundle exec jekyll build
-  - bundle exec jekyll serve
