@@ -1,8 +1,8 @@
 # Site settings...
 title: Komunitas Git Indonesia
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis distinctio sit nostrum incidunt, aspernatur earum, id ipsa fuga voluptate? Ducimus minus, perspiciatis vel natus eos aut voluptate dolorem consequuntur quis?
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis distinctio sit nostrum incidunt, aspernatur earum, id ipsa fuga voluptate? Ducimus minus.
 baseurl: ""
-url: "http://gitindonesia.github.io"
+url: "https://gitindonesia.github.io"
 twitter_username: Git_ID
 github:
   username: GitIndonesia
