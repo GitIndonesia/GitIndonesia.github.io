@@ -1,8 +1,11 @@
 # [GitIndonesia.github.io](http://gitindonesia.github.io)
 [![Build Status](https://img.shields.io/travis/GitIndonesia/GitIndonesia.github.io/master.svg?style=flat-square)](https://travis-ci.org/GitIndonesia/GitIndonesia.github.io)
 
-Source code Homepage Komunitas Git Indonesia.
+![Built With Love](http://forthebadge.com/images/badges/built-with-love.svg)
+![Makes People Smile](http://forthebadge.com/images/badges/makes-people-smile.svg)
 
+Source code Homepage Komunitas Git Indonesia.
+<br>
 Project ini dibangun dengan bantuan dari
 
   * [Bootstrap](https://github.com/twbs/bootstrap)
