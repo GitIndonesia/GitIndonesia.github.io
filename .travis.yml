@@ -6,7 +6,7 @@ git:
 cache: bundler
 
 rvm:
-	- 2.3
+	- 2.2
 
 branches:
   only:
