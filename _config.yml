@@ -1,30 +1,29 @@
-# Site settings
+# Site settings...
 title: Komunitas Git Indonesia
-description: Indonesian Git Community and network.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://gitindonesia.github.io" # the base hostname & protocol for your site
-twitter_username: ~
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis distinctio sit nostrum incidunt, aspernatur earum, id ipsa fuga voluptate? Ducimus minus, perspiciatis vel natus eos aut voluptate dolorem consequuntur quis?
+baseurl: ""
+url: "http://gitindonesia.github.io"
+twitter_username: Git_ID
 github:
   username: GitIndonesia
   repo: GitIndonesia/GitIndonesia.github.io
 disqus_shortname: githubid
 
-# Build settings
+# Build settings...
 markdown: kramdown
-
 permalink: /blog/:title/
 
-# Exclude system files
+# Exclude system files...
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
 
-# Default value Front Matter
+# Default value Front Matter...
 defaults:
   - # default post type
     scope:
       type: "posts"
     values:
       layout: "post"
-      comment: true 
+      comment: true
