@@ -1,4 +1,6 @@
 # [GitIndonesia.github.io](http://gitindonesia.github.io)
+[![Build Status](https://img.shields.io/travis/GitIndonesia/GitIndonesia.github.io/master.svg?style=flat-square)](https://travis-ci.org/GitIndonesia/GitIndonesia.github.io)
+
 Source code Homepage Komunitas Git Indonesia.
 
 Project ini dibangun dengan bantuan dari
