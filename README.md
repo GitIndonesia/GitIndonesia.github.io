@@ -11,7 +11,7 @@ Project ini dibangun dengan bantuan dari
 ## Persyaratan
 - Ruby >= 2.0
 - [RubyGems](http://rubygems.org/pages/download)
-- Jekyll >=3.0
+- Jekyll >= 3.0
 - Git
 - Linux, Unix, atau Mac OS X
 

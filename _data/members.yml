@@ -7,10 +7,14 @@
 #   name: NAMA_ANDA
 #   description: Satu kalimat, sejuta arti.
 #   languages:
-#     - bahasa sunda
-#     - bahasa jawa
-#     - bahasa melayu
-#     - bahasa belanda
+#     - For Example
+#     - JavaScript
+#     - PHP
+#     - Python
+#     - Swift
+#     - Go
+#     - And
+#     - More!
 #
 
 # Untuk sementara, semenjak saya (indrakaw), belum tahu data lengkap, saya isi setahunya.
@@ -30,6 +34,9 @@
 
 - username: dikiaap
   name: Diki Andriansyah
+  description: Who loves create awesome interfaces.
+  languages:
+    - Laravel
 
 - username: maulayyacyber
   name: Fika Ridaul Maulayya

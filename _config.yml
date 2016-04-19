@@ -4,6 +4,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditii
 baseurl: ""
 url: "https://gitindonesia.github.io"
 twitter_username: Git_ID
+facebook_username: GitHubID
 github:
   username: GitIndonesia
   repo: GitIndonesia/GitIndonesia.github.io
