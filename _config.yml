@@ -3,9 +3,10 @@ title: Komunitas Git Indonesia
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis distinctio sit nostrum incidunt, aspernatur earum, id ipsa fuga voluptate? Ducimus minus.
 baseurl: ""
 url: "https://gitindonesia.github.io"
-twitter_username: Git_ID
-facebook_username: GitHubID
 disqus_shortname: githubid
+social:
+  twitter: Git_ID
+  facebook: GitHubID
 github:
   username: GitIndonesia
   repo: GitIndonesia/GitIndonesia.github.io
