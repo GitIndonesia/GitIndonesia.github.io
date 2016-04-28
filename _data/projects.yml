@@ -1,0 +1,13 @@
+- name: Awesome Indonesia Repo
+  status: finished
+  description: A curated list of amazingly awesome repository created and contributed by Indonesian people.
+  github: GitIndonesia/awesome-indonesia-repo
+  languages:
+    - Makrdown
+
+- name: GitIndonesia/Handbook
+  status: wip
+  description: Dokumentasi dan panduan ringkas seputar Git oleh Komunitas Git Indonesia.
+  github: GitIndonesia/handbook
+  languages:
+    - Markdown

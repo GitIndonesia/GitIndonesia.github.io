@@ -1,12 +1,41 @@
 ---
-layout: full-width
+layout: default
 title: Projects
 permalink: /projects/
 ---
-<div class="row">
-  <div class="col-lg-6 col-lg-offset-3 text-center">
-    <h1>Projects</h1>
-    <hr>
-    <p>Hal-hal oleh komunitas kami yang telah selesai atau dalam proses/berlangsung.</p>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 col-lg-offset-3 text-center">
+      <h1>Projects</h1>
+      <hr>
+      <p>Hal-hal oleh komunitas kami yang telah selesai atau dalam proses/berlangsung.</p>
+    </div>
+  </div>
+
+  <div class="row text-center">
+  {% for project in site.data.projects %}
+    <div class="col-lg-4 col-md-4 col-sm-4">
+      <div class="panel panel-default">
+        <div class="panel-heading {{ project.status }}">
+          <a href="https://github.com/{{ project.github }}">
+            <h3 class="panel-title">{{ project.name }}
+              <div class="project-status">
+                <i class="fa icon"></i>
+              </div>
+            </h3>
+          </a>
+        </div>
+        <div class="panel-body pbody-projects">
+          {{ project.description }}
+        </div>
+        <div class="panel-footer"><b>Built using:</b> {{ project.languages | join: ', ' }}</div>
+      </div>
+    </div>
+  {% capture num %}{{ forloop.index | modulo: 3 }}{% endcapture %}
+  {% if num == '0' %}
+  </div>
+  <div class="row text-center">
+  {% endif %}
+  {% endfor %}
   </div>
 </div>
