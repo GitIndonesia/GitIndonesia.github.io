@@ -1,6 +1,6 @@
 # Urutan dimulai dari teratas.
 # Yang teratas adalah member penting (misal: Leader, manager, dsb)
-# Member diharuskan menambahkan diri oleh disendiri.
+# Member diharuskan menambahkan dirinya sendiri.
 #
 # FORMAT:
 # - username: USERNAME_GITHUB
@@ -94,7 +94,7 @@
 
 - username: indrakaw
   name: Indra Kurniawan
-  description: Orang keras.
+  description: Breaking things since 2010.
   languages:
     - HTML/(S)CSS
     - PHP

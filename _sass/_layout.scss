@@ -71,6 +71,8 @@ a:hover {
   background-color: #e5e5e5;
 }
 
+/* User member style */
+
 .user {
   &-description {
     display: block;
@@ -132,6 +134,8 @@ a:hover {
   margin-top: -20px;
 }
 
+/* Blog style */
+
 .blog {
   &-header {
   	padding-top:20px;
@@ -173,4 +177,44 @@ a:hover {
   	font-size: ceil(($font-size-base * 0.85)); // ~12px
   	line-height:1
   }
+}
+
+/* Project style */
+
+.pbody-projects {
+  height: 70px;
+  max-height: 70px;
+  overflow-y: auto;
+}
+
+.panel-title {
+  text-align: left;
+}
+
+.project-status {
+  float: right;
+}
+
+.finished, .finished a {
+  color: #468847;
+}
+
+.finished .icon:before {
+  content: "\f00c";
+}
+
+.wip, .wip a {
+  color: #C09853;
+}
+
+.wip .icon:before {
+  content: "\f017";
+}
+
+.stalled, .stalled a {
+  color: #B94A48;
+}
+
+.stalled .icon:before {
+  content: "\f00d";
 }

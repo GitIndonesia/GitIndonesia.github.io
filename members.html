@@ -1,37 +1,39 @@
 ---
-layout: full-width
+layout: default
 title: Members
 permalink: /members/
 ---
-<div class="row">
-  <div class="col-lg-6 col-lg-offset-3 text-center">
-    <h1>Members</h1>
-    <hr>
-    <p>Posisi dan Keterampilan dari anggota kami. Sorot avatar untuk lihat beberapa informasi.</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6 col-lg-offset-3 text-center">
+      <h1>Members</h1>
+      <hr>
+      <p>Posisi dan Keterampilan dari anggota kami. Sorot avatar untuk lihat beberapa informasi.</p>
+    </div>
   </div>
-</div>
 
-<div class="row text-center">
-  {% for member in site.data.members %}
-  <a href="//github.com/{{ member.username }}">
-  <div class="col-lg-3 col-md-3 col-sm-6 no-pm">
-    <div class="user-information">
-      {{ member.description }}
-      <p class="text-primary">{{ member.languages | join: ', ' }}</p>
-    </div>
-    <div class="user-description">
-      {{ member.username }}
-      <div class="user-realname">
-        {% if member.name %}{{ member.name }}{% else %}{{ member.username }}{% endif %}
+  <div class="row text-center">
+    {% for member in site.data.members %}
+    <a href="//github.com/{{ member.username }}">
+    <div class="col-lg-3 col-md-3 col-sm-6 no-pm">
+      <div class="user-information">
+        {{ member.description }}
+        <p class="text-primary">{{ member.languages | join: ', ' }}</p>
       </div>
+      <div class="user-description">
+        {{ member.username }}
+        <div class="user-realname">
+          {% if member.name %}{{ member.name }}{% else %}{{ member.username }}{% endif %}
+        </div>
+      </div>
+      <img class="img-responsive user-image" src="//github.com/{{ member.username }}.png " />
     </div>
-    <img class="img-responsive user-image" src="//github.com/{{ member.username }}.png " />
+    </a>
+    {% capture num %}{{ forloop.index | modulo: 4 }}{% endcapture %} {% if num == '0' %}
   </div>
-  </a>
-  {% capture num %}{{ forloop.index | modulo: 4 }}{% endcapture %} {% if num == '0' %}
+  <!-- /row -->
+  <div class="row text-center">
+    {% endif %} {% endfor %}
+  </div>
+  <!-- /row -->
 </div>
-<!-- /row -->
-<div class="row text-center">
-  {% endif %} {% endfor %}
-</div>
-<!-- /row -->
