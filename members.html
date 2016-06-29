@@ -26,7 +26,7 @@ permalink: /members/
           {% if member.name %}{{ member.name }}{% else %}{{ member.username }}{% endif %}
         </div>
       </div>
-      <img class="img-responsive user-image" src="//github.com/{{ member.username }}.png " />
+      <img class="img-responsive user-image" src="//github.com/{{ member.username }}.png" alt="{{ member.username }}" />
     </div>
     </a>
     {% capture num %}{{ forloop.index | modulo: 4 }}{% endcapture %} {% if num == '0' %}
