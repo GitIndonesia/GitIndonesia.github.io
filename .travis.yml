@@ -10,6 +10,10 @@ rvm:
   - 2.1
   - 2.0
 
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
 branches:
   only:
     - master
@@ -24,3 +28,4 @@ install:
 script:
   - bundle exec jekyll clean
   - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site --disable-external --assume-extension --allow-hash-href --check-html
