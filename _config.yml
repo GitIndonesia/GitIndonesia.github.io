@@ -24,6 +24,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - CONTRIBUTING.md
 
 # Default value Front Matter...
 defaults:

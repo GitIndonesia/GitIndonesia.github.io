@@ -1,2 +1,11 @@
+{% if jekyll.environment == 'production' %}
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+{% else %}
+<script src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/assets/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+{% endif %}
+
+<script type="text/javascript">
+  // Analytic script eventually goes here
+</script>
